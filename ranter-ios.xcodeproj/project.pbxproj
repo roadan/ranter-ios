@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0DC1F9961954136400050FD8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DC1F9951954136400050FD8 /* Foundation.framework */; };
+		0DC1F9981954136400050FD8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DC1F9971954136400050FD8 /* CoreGraphics.framework */; };
+		0DC1F99A1954136400050FD8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DC1F9991954136400050FD8 /* UIKit.framework */; };
+		0DC1F9A01954136400050FD8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0DC1F99E1954136400050FD8 /* InfoPlist.strings */; };
+		0DC1F9A21954136400050FD8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC1F9A11954136400050FD8 /* main.m */; };
+		0DC1F9A61954136400050FD8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC1F9A51954136400050FD8 /* AppDelegate.m */; };
+		0DC1F9A91954136400050FD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DC1F9A71954136400050FD8 /* Main.storyboard */; };
+		0DC1F9AC1954136400050FD8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC1F9AB1954136400050FD8 /* ViewController.m */; };
+		0DC1F9AE1954136400050FD8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DC1F9AD1954136400050FD8 /* Images.xcassets */; };
+		0DC1F9B51954136400050FD8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DC1F9B41954136400050FD8 /* XCTest.framework */; };
+		0DC1F9B61954136400050FD8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DC1F9951954136400050FD8 /* Foundation.framework */; };
+		0DC1F9B71954136400050FD8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DC1F9991954136400050FD8 /* UIKit.framework */; };
+		0DC1F9BF1954136400050FD8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0DC1F9BD1954136400050FD8 /* InfoPlist.strings */; };
+		0DC1F9C11954136400050FD8 /* ranter_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC1F9C01954136400050FD8 /* ranter_iosTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0DC1F9B81954136400050FD8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0DC1F98A1954136400050FD8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0DC1F9911954136400050FD8;
+			remoteInfo = "ranter-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0DC1F9921954136400050FD8 /* ranter-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ranter-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DC1F9951954136400050FD8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0DC1F9971954136400050FD8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0DC1F9991954136400050FD8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0DC1F99D1954136400050FD8 /* ranter-ios-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ranter-ios-Info.plist"; sourceTree = "<group>"; };
+		0DC1F99F1954136400050FD8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0DC1F9A11954136400050FD8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0DC1F9A31954136400050FD8 /* ranter-ios-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ranter-ios-Prefix.pch"; sourceTree = "<group>"; };
+		0DC1F9A41954136400050FD8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0DC1F9A51954136400050FD8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0DC1F9A81954136400050FD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0DC1F9AA1954136400050FD8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0DC1F9AB1954136400050FD8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0DC1F9AD1954136400050FD8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0DC1F9B31954136400050FD8 /* ranter-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ranter-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DC1F9B41954136400050FD8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		0DC1F9BC1954136400050FD8 /* ranter-iosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ranter-iosTests-Info.plist"; sourceTree = "<group>"; };
+		0DC1F9BE1954136400050FD8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0DC1F9C01954136400050FD8 /* ranter_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ranter_iosTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0DC1F98F1954136400050FD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DC1F9981954136400050FD8 /* CoreGraphics.framework in Frameworks */,
+				0DC1F99A1954136400050FD8 /* UIKit.framework in Frameworks */,
+				0DC1F9961954136400050FD8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0DC1F9B01954136400050FD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DC1F9B51954136400050FD8 /* XCTest.framework in Frameworks */,
+				0DC1F9B71954136400050FD8 /* UIKit.framework in Frameworks */,
+				0DC1F9B61954136400050FD8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0DC1F9891954136400050FD8 = {
+			isa = PBXGroup;
+			children = (
+				0DC1F99B1954136400050FD8 /* ranter-ios */,
+				0DC1F9BA1954136400050FD8 /* ranter-iosTests */,
+				0DC1F9941954136400050FD8 /* Frameworks */,
+				0DC1F9931954136400050FD8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0DC1F9931954136400050FD8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0DC1F9921954136400050FD8 /* ranter-ios.app */,
+				0DC1F9B31954136400050FD8 /* ranter-iosTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0DC1F9941954136400050FD8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0DC1F9951954136400050FD8 /* Foundation.framework */,
+				0DC1F9971954136400050FD8 /* CoreGraphics.framework */,
+				0DC1F9991954136400050FD8 /* UIKit.framework */,
+				0DC1F9B41954136400050FD8 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0DC1F99B1954136400050FD8 /* ranter-ios */ = {
+			isa = PBXGroup;
+			children = (
+				0DC1F9A41954136400050FD8 /* AppDelegate.h */,
+				0DC1F9A51954136400050FD8 /* AppDelegate.m */,
+				0DC1F9A71954136400050FD8 /* Main.storyboard */,
+				0DC1F9AA1954136400050FD8 /* ViewController.h */,
+				0DC1F9AB1954136400050FD8 /* ViewController.m */,
+				0DC1F9AD1954136400050FD8 /* Images.xcassets */,
+				0DC1F99C1954136400050FD8 /* Supporting Files */,
+			);
+			path = "ranter-ios";
+			sourceTree = "<group>";
+		};
+		0DC1F99C1954136400050FD8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0DC1F99D1954136400050FD8 /* ranter-ios-Info.plist */,
+				0DC1F99E1954136400050FD8 /* InfoPlist.strings */,
+				0DC1F9A11954136400050FD8 /* main.m */,
+				0DC1F9A31954136400050FD8 /* ranter-ios-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0DC1F9BA1954136400050FD8 /* ranter-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				0DC1F9C01954136400050FD8 /* ranter_iosTests.m */,
+				0DC1F9BB1954136400050FD8 /* Supporting Files */,
+			);
+			path = "ranter-iosTests";
+			sourceTree = "<group>";
+		};
+		0DC1F9BB1954136400050FD8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0DC1F9BC1954136400050FD8 /* ranter-iosTests-Info.plist */,
+				0DC1F9BD1954136400050FD8 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0DC1F9911954136400050FD8 /* ranter-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0DC1F9C41954136400050FD8 /* Build configuration list for PBXNativeTarget "ranter-ios" */;
+			buildPhases = (
+				0DC1F98E1954136400050FD8 /* Sources */,
+				0DC1F98F1954136400050FD8 /* Frameworks */,
+				0DC1F9901954136400050FD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ranter-ios";
+			productName = "ranter-ios";
+			productReference = 0DC1F9921954136400050FD8 /* ranter-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0DC1F9B21954136400050FD8 /* ranter-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0DC1F9C71954136400050FD8 /* Build configuration list for PBXNativeTarget "ranter-iosTests" */;
+			buildPhases = (
+				0DC1F9AF1954136400050FD8 /* Sources */,
+				0DC1F9B01954136400050FD8 /* Frameworks */,
+				0DC1F9B11954136400050FD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0DC1F9B91954136400050FD8 /* PBXTargetDependency */,
+			);
+			name = "ranter-iosTests";
+			productName = "ranter-iosTests";
+			productReference = 0DC1F9B31954136400050FD8 /* ranter-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0DC1F98A1954136400050FD8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Yehontan Yehudai";
+				TargetAttributes = {
+					0DC1F9B21954136400050FD8 = {
+						TestTargetID = 0DC1F9911954136400050FD8;
+					};
+				};
+			};
+			buildConfigurationList = 0DC1F98D1954136400050FD8 /* Build configuration list for PBXProject "ranter-ios" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0DC1F9891954136400050FD8;
+			productRefGroup = 0DC1F9931954136400050FD8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0DC1F9911954136400050FD8 /* ranter-ios */,
+				0DC1F9B21954136400050FD8 /* ranter-iosTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0DC1F9901954136400050FD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DC1F9AE1954136400050FD8 /* Images.xcassets in Resources */,
+				0DC1F9A01954136400050FD8 /* InfoPlist.strings in Resources */,
+				0DC1F9A91954136400050FD8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0DC1F9B11954136400050FD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DC1F9BF1954136400050FD8 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0DC1F98E1954136400050FD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DC1F9AC1954136400050FD8 /* ViewController.m in Sources */,
+				0DC1F9A61954136400050FD8 /* AppDelegate.m in Sources */,
+				0DC1F9A21954136400050FD8 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0DC1F9AF1954136400050FD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DC1F9C11954136400050FD8 /* ranter_iosTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0DC1F9B91954136400050FD8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0DC1F9911954136400050FD8 /* ranter-ios */;
+			targetProxy = 0DC1F9B81954136400050FD8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0DC1F99E1954136400050FD8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0DC1F99F1954136400050FD8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0DC1F9A71954136400050FD8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0DC1F9A81954136400050FD8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0DC1F9BD1954136400050FD8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0DC1F9BE1954136400050FD8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0DC1F9C21954136400050FD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0DC1F9C31954136400050FD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0DC1F9C51954136400050FD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ranter-ios/ranter-ios-Prefix.pch";
+				INFOPLIST_FILE = "ranter-ios/ranter-ios-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0DC1F9C61954136400050FD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ranter-ios/ranter-ios-Prefix.pch";
+				INFOPLIST_FILE = "ranter-ios/ranter-ios-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		0DC1F9C81954136400050FD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ranter-ios.app/ranter-ios";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ranter-ios/ranter-ios-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ranter-iosTests/ranter-iosTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		0DC1F9C91954136400050FD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ranter-ios.app/ranter-ios";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ranter-ios/ranter-ios-Prefix.pch";
+				INFOPLIST_FILE = "ranter-iosTests/ranter-iosTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0DC1F98D1954136400050FD8 /* Build configuration list for PBXProject "ranter-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0DC1F9C21954136400050FD8 /* Debug */,
+				0DC1F9C31954136400050FD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0DC1F9C41954136400050FD8 /* Build configuration list for PBXNativeTarget "ranter-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0DC1F9C51954136400050FD8 /* Debug */,
+				0DC1F9C61954136400050FD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0DC1F9C71954136400050FD8 /* Build configuration list for PBXNativeTarget "ranter-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0DC1F9C81954136400050FD8 /* Debug */,
+				0DC1F9C91954136400050FD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0DC1F98A1954136400050FD8 /* Project object */;
+}
