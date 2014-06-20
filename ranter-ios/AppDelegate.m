@@ -14,7 +14,7 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    self.firstViewController = [[UILoginVCViewController alloc] initWithNibName:@"UILoginVCViewController" bundle:nil];
+    self.firstViewController = [[UILoginVC alloc] initWithNibName:@"UILoginVC" bundle:nil];
 
     [self.window addSubview:self.firstViewController.view];
     self.window.backgroundColor = [UIColor whiteColor];

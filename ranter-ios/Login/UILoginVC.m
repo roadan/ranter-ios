@@ -1,15 +1,15 @@
 //
-//  UILoginVCViewController.m
+//  UILoginVC.m
 //  ranter-ios
 //
 //  Created by Yehonatan Yehudai on 20/6/14.
 //  Copyright (c) 2014 Yehontan Yehudai. All rights reserved.
 //
 
-#import "UILoginVCViewController.h"
-#import "AppStartupViewController.h"
+#import "UILoginVC.h"
+#import "UIFirstVC.h"
 
-@interface UILoginVCViewController ()
+@interface UILoginVC ()
 
 @property (weak, nonatomic) IBOutlet UITextField *userNameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
@@ -21,7 +21,7 @@
 
 @end
 
-@implementation UILoginVCViewController
+@implementation UILoginVC
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -49,7 +49,7 @@
 - (IBAction)selectedDoneLoginButton {
     
     if (self.isLoggedIn) {
-        AppStartupViewController * viewController = [[AppStartupViewController alloc] initWithNibName:@"AppStartupViewController" bundle:[NSBundle mainBundle]];
+        UIFirstVC * viewController = [[UIFirstVC alloc] initWithNibName:@"UIFirstVC" bundle:[NSBundle mainBundle]];
         [self presentViewController:viewController animated:YES completion:nil];
         // animate = NO because we don't want to see the mainVC's view
     }

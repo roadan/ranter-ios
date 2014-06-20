@@ -1,5 +1,5 @@
 //
-//  UILoginVCViewController.h
+//  UIFirstVC.h
 //  ranter-ios
 //
 //  Created by Yehonatan Yehudai on 20/6/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UILoginVCViewController : UIViewController
+@interface UIFirstVC : UIViewController
 
 @end

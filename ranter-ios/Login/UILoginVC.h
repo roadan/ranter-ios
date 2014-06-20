@@ -1,5 +1,5 @@
 //
-//  AppStartupViewController.h
+//  UILoginVC.h
 //  ranter-ios
 //
 //  Created by Yehonatan Yehudai on 20/6/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppStartupViewController : UIViewController
+@interface UILoginVC : UIViewController
 
 @end
