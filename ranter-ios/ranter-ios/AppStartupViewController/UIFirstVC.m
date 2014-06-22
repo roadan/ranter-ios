@@ -26,7 +26,7 @@
 @implementation UIFirstVC
 
 CBLDatabase * database;
-
+NSString * documentId;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -134,31 +134,6 @@ CBLDatabase * database;
     }
 }
 
-
-- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
-    
-    // This UIIMagePickerController delegate method is called by the image picker when
-    // it's dismissed as a result of choosing an image from the Photo Library,
-    // or taking an image with the camera
-    
-    UIImage *takenImage = [info objectForKey:UIImagePickerControllerOriginalImage];
-    self.imageView.image = takenImage;
-    [self.imageView reloadInputViews];
-    // Do whatever is required with the image here
-    // ...
-    
-    // Get rid of the imagePicker, either by dismissing the popover...
-    if (self.usingPopover) {
-        
-        [self.popover dismissPopoverAnimated:YES];
-        
-    } else {
-        
-        // ...or dismissing the modal view controller
-        [self dismissViewControllerAnimated:YES completion:nil];
-    }
-}
-
 - (IBAction)doRant {
     
     NSDictionary* properties = @{@"type":       @"rant",
@@ -175,6 +150,7 @@ CBLDatabase * database;
     
     NSLog(@"Document written to database ranter with Id = %@", document.documentID);
     
+    documentId = document.documentID;
     CBLDocument* retrivedDoc = [database documentWithID:document.documentID];
     
     NSLog(@"retrievedDocument=%@", [retrivedDoc properties]);
@@ -186,7 +162,6 @@ CBLDatabase * database;
     if (![document putProperties: updatedProperties error: &error]) {
         NSLog(@"Faild to save document");
     }
-    
 
 //    // updating a ducument via the update method
 //    CBLDocument* retrivedDoc = [database documentWithID: document.documentID];
@@ -208,4 +183,56 @@ CBLDatabase * database;
     [self takeSimulatorSafePhotoWithPopoverFrame:CGRectMake(0, 0, 320, 320)];
 }
 
+- (IBAction)takePhoto:(id)sender {
+    
+    if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+        
+        UIAlertView *myAlertView = [[UIAlertView alloc]
+                                    initWithTitle:@"Error"
+                                    message:@"Device has no camera"
+                                    delegate:nil
+                                    cancelButtonTitle:@"OK"
+                                    otherButtonTitles: nil];
+        
+        [myAlertView show];
+        
+    }
+    else {
+        
+        UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+    
+        picker.delegate = self;
+        picker.allowsEditing = YES;
+        picker.sourceType = UIImagePickerControllerSourceTypeCamera;
+    
+        [self presentViewController:picker animated:YES completion:NULL];
+    }
+    
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+    
+    UIImage *chosenImage = info[UIImagePickerControllerEditedImage];
+    
+    CBLDocument* document = [database documentWithID:documentId];
+    CBLUnsavedRevision* newRev = [document.currentRevision createRevision];
+    NSData* imageData = UIImageJPEGRepresentation(chosenImage, 0.75);
+    
+    NSDateFormatter *dateFormater = [[NSDateFormatter alloc] init];
+    [dateFormater setDateFormat:@"yyyyMMdd_HHmmss"];
+    NSString* fileName = [NSString stringWithFormat:@"IMG_%@.jpg",[dateFormater stringFromDate:[NSDate date]]];
+
+    
+    [newRev setAttachmentNamed: fileName
+               withContentType: @"image/jpeg"
+                       content: imageData];
+    // (You could also update newRev.properties while you're here)
+    NSError* error;
+    assert([newRev save: &error]);
+    
+    self.imageView.image = chosenImage;
+    
+    [picker dismissViewControllerAnimated:YES completion:NULL];
+    
+}
 @end

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIFirstVC : UIViewController
+@interface UIFirstVC : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 @property NSString* userName;
+- (IBAction)takePhoto:(id)sender;
 @end

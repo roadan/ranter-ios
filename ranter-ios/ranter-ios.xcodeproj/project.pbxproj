@@ -29,6 +29,8 @@
 		4B851B6D19558F340000E926 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B851B6C19558F340000E926 /* SystemConfiguration.framework */; };
 		4B851B6F19558F3E0000E926 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B851B6E19558F3E0000E926 /* libsqlite3.dylib */; };
 		4B851B7119558F490000E926 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B851B7019558F490000E926 /* libz.dylib */; };
+		4B851B7B1956F0040000E926 /* StreamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B851B791956F0040000E926 /* StreamViewController.m */; };
+		4B851B7C1956F0040000E926 /* StreamViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B851B7A1956F0040000E926 /* StreamViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,9 @@
 		4B851B6C19558F340000E926 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		4B851B6E19558F3E0000E926 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		4B851B7019558F490000E926 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		4B851B781956F0040000E926 /* StreamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StreamViewController.h; sourceTree = "<group>"; };
+		4B851B791956F0040000E926 /* StreamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StreamViewController.m; sourceTree = "<group>"; };
+		4B851B7A1956F0040000E926 /* StreamViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StreamViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +146,7 @@
 		0DC1F99B1954136400050FD8 /* ranter-ios */ = {
 			isa = PBXGroup;
 			children = (
+				4B851B771956EFAC0000E926 /* Stream */,
 				0DC1F9A41954136400050FD8 /* AppDelegate.h */,
 				0DC1F9A51954136400050FD8 /* AppDelegate.m */,
 				0DC1F9AD1954136400050FD8 /* Images.xcassets */,
@@ -190,6 +196,16 @@
 				0DC1F9CC1954142600050FD8 /* UILoginVC.xib */,
 			);
 			name = Login;
+			sourceTree = "<group>";
+		};
+		4B851B771956EFAC0000E926 /* Stream */ = {
+			isa = PBXGroup;
+			children = (
+				4B851B781956F0040000E926 /* StreamViewController.h */,
+				4B851B791956F0040000E926 /* StreamViewController.m */,
+				4B851B7A1956F0040000E926 /* StreamViewController.xib */,
+			);
+			name = Stream;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +287,7 @@
 				0DC1F9AE1954136400050FD8 /* Images.xcassets in Resources */,
 				0DC1F9A01954136400050FD8 /* InfoPlist.strings in Resources */,
 				0DC1F9CE1954142600050FD8 /* UILoginVC.xib in Resources */,
+				4B851B7C1956F0040000E926 /* StreamViewController.xib in Resources */,
 				0DC1F9D4195423D900050FD8 /* UIFirstVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,6 +309,7 @@
 			files = (
 				0DC1F9D2195416FB00050FD8 /* UIFirstVC.m in Sources */,
 				0DC1F9A61954136400050FD8 /* AppDelegate.m in Sources */,
+				4B851B7B1956F0040000E926 /* StreamViewController.m in Sources */,
 				0DC1F9A21954136400050FD8 /* main.m in Sources */,
 				0DC1F9CD1954142600050FD8 /* UILoginVC.m in Sources */,
 			);
@@ -419,6 +437,7 @@
 				INFOPLIST_FILE = "ranter-ios/ranter-ios-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -437,6 +456,7 @@
 				INFOPLIST_FILE = "ranter-ios/ranter-ios-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
