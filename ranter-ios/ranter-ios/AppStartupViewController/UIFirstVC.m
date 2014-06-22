@@ -175,7 +175,7 @@ CBLDatabase * database;
     
     NSLog(@"Document written to database ranter with Id = %@", document.documentID);
     
-    CBLDocument *retrivedDoc = [database documentWithID:document.documentID];
+    CBLDocument* retrivedDoc = [database documentWithID:document.documentID];
     
     NSLog(@"retrievedDocument=%@", [retrivedDoc properties]);
     
@@ -186,6 +186,21 @@ CBLDatabase * database;
     if (![document putProperties: updatedProperties error: &error]) {
         NSLog(@"Faild to save document");
     }
+    
+
+//    // updating a ducument via the update method
+//    CBLDocument* retrivedDoc = [database documentWithID: document.documentID];
+//    if (![retrivedDoc update: ^BOOL(CBLUnsavedRevision *newRev) {
+//        newRev[@"date"] = [NSDate date];
+//        return YES;
+//    } error: &error]) {
+//         NSLog(@"Error updating the document");
+//    }
+    
+//    // deleting a document
+//    CBLDocument* retrivedDoc = [database documentWithID: document.documentID];
+//    
+//    [retrivedDoc deleteDocument: &error];
     
 }
 
